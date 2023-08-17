@@ -1,6 +1,7 @@
 # trip-demo
 
-This template should help get you started developing with Vue 3 in Vite.
+- a vue 3 + pinia demo
+- trip demo
 
 ## Recommended IDE Setup
 
