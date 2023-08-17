@@ -1,7 +1,7 @@
 # trip-demo
 
-- a vue 3 + pinia demo
-- trip demo
+- A Vue 3 + Vite demo
+- Learn from [@coderwhy](https://github.com/coderwhy)
 
 ## Recommended IDE Setup
 
