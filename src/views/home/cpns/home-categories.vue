@@ -1,13 +1,7 @@
 <template>
-  <div class="categories">
-    
-  </div>
+  <div class="categories"></div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>
