@@ -1,4 +1,5 @@
 import { onMounted, onUnmounted, ref } from 'vue'
+import { throttle } from '@/utils/300tools'
 
 export default function useScroll(reachBottomCB) {
   const isReachBottom = ref(false)
@@ -7,7 +8,8 @@ export default function useScroll(reachBottomCB) {
   const scrollTop = ref(0)
   const scrollHeight = ref(0)
 
-  const scrollListenerHandler = () => {
+  // 节流处理
+  const scrollListenerHandler = throttle(() => {
     clientHeight.value = document.documentElement.clientHeight
     scrollTop.value = document.documentElement.scrollTop
     scrollHeight.value = document.documentElement.scrollHeight
@@ -15,7 +17,9 @@ export default function useScroll(reachBottomCB) {
       // if (reachBottomCB) reachBottomCB()
       isReachBottom.value = true
     }
-  }
+    console.log(1111)
+  }, 100)
+
   onMounted(() => {
     window.addEventListener('scroll', scrollListenerHandler)
   })
