@@ -1,5 +1,5 @@
 <template>
-  <div class="detail-swipe">
+  <div class="swipe">
     <van-swipe class="swipe-list" :autoplay="3000" indicator-color="white">
       <template v-for="(item, index) in swipeData">
         <van-swipe-item class="item">
@@ -58,7 +58,7 @@ const getCategoryIndex = item => {
 </script>
 
 <style lang="less" scoped>
-.detail-swipe {
+.swipe {
   .swipe-list {
     .item {
       img {
